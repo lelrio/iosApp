@@ -20,7 +20,7 @@ class CreditViewController: UIViewController {
     func share() {
         let activityItems:[Any] = [
             //UIImage[named:"image.png"],
-            URL(string: "https;//ecole-webstart.com"),
+            URL(string: "https;//ecole-webstart.com") as Any,
             "j'ai testé cette application, je vous la conseille !"
         ]
         let vc = UIActivityViewController(activityItems: activityItems, applicationActivities: [])

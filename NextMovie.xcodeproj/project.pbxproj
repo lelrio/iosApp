@@ -12,8 +12,9 @@
 		1D5139C12407C5F7007A3730 /* sf-compact-display-thin-58646eb43a785.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D5139C02407C5D4007A3730 /* sf-compact-display-thin-58646eb43a785.otf */; };
 		1D8062F223F53697005EEE00 /* ContinuationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8062F123F53697005EEE00 /* ContinuationViewController.swift */; };
 		1D8062F423F536C5005EEE00 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8062F323F536C5005EEE00 /* ResultViewController.swift */; };
-		1D8062F623F536D8005EEE00 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8062F523F536D8005EEE00 /* ContactViewController.swift */; };
 		1D8062F823F53C1A005EEE00 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8062F723F53C1A005EEE00 /* CreditViewController.swift */; };
+		1D88A98F2410F692002B40AF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88A98E2410F692002B40AF /* Question.swift */; };
+		1D88A9912411124B002B40AF /* formations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88A9902411124B002B40AF /* formations.swift */; };
 		9CB210B73513390A27A4CC52 /* Pods_NextMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1E6924E9CF0C30EB863E1D /* Pods_NextMovie.framework */; };
 		D9A0E58D23C717F5007BF1DA /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0E58C23C717F5007BF1DA /* Choice.swift */; };
 		D9A8422C23A22167003CDDAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A8422B23A22167003CDDAA /* AppDelegate.swift */; };
@@ -21,8 +22,6 @@
 		D9A8423323A22167003CDDAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A8423123A22167003CDDAA /* Main.storyboard */; };
 		D9A8423523A22168003CDDAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A8423423A22168003CDDAA /* Assets.xcassets */; };
 		D9A8423823A22168003CDDAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A8423623A22168003CDDAA /* LaunchScreen.storyboard */; };
-		D9E34A4423A2315C004C149C /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34A4323A2315C004C149C /* MovieService.swift */; };
-		D9E34A4623A23EF8004C149C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34A4523A23EF8004C149C /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +30,9 @@
 		1D5139C02407C5D4007A3730 /* sf-compact-display-thin-58646eb43a785.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-compact-display-thin-58646eb43a785.otf"; sourceTree = "<group>"; };
 		1D8062F123F53697005EEE00 /* ContinuationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuationViewController.swift; sourceTree = "<group>"; };
 		1D8062F323F536C5005EEE00 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		1D8062F523F536D8005EEE00 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		1D8062F723F53C1A005EEE00 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
+		1D88A98E2410F692002B40AF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		1D88A9902411124B002B40AF /* formations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formations.swift; sourceTree = "<group>"; };
 		6771E7730FB3BB41E9D927ED /* Pods-NextMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextMovie.release.xcconfig"; path = "Target Support Files/Pods-NextMovie/Pods-NextMovie.release.xcconfig"; sourceTree = "<group>"; };
 		8C1E6924E9CF0C30EB863E1D /* Pods_NextMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A0E58C23C717F5007BF1DA /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
@@ -43,8 +43,6 @@
 		D9A8423423A22168003CDDAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9A8423723A22168003CDDAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9A8423923A22168003CDDAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9E34A4323A2315C004C149C /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
-		D9E34A4523A23EF8004C149C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F5A3BFDF024D5299750D2647 /* Pods-NextMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextMovie.debug.xcconfig"; path = "Target Support Files/Pods-NextMovie/Pods-NextMovie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,9 +128,9 @@
 		D9E34A4123A22E65004C149C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9E34A4323A2315C004C149C /* MovieService.swift */,
-				D9E34A4523A23EF8004C149C /* Movie.swift */,
 				D9A0E58C23C717F5007BF1DA /* Choice.swift */,
+				1D88A98E2410F692002B40AF /* Question.swift */,
+				1D88A9902411124B002B40AF /* formations.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,7 +141,6 @@
 				D9A8422F23A22167003CDDAA /* ViewController.swift */,
 				1D8062F123F53697005EEE00 /* ContinuationViewController.swift */,
 				1D8062F323F536C5005EEE00 /* ResultViewController.swift */,
-				1D8062F523F536D8005EEE00 /* ContactViewController.swift */,
 				1D8062F723F53C1A005EEE00 /* CreditViewController.swift */,
 			);
 			path = Controller;
@@ -279,11 +276,10 @@
 				1D8062F223F53697005EEE00 /* ContinuationViewController.swift in Sources */,
 				D9A8423023A22167003CDDAA /* ViewController.swift in Sources */,
 				D9A8422C23A22167003CDDAA /* AppDelegate.swift in Sources */,
-				D9E34A4423A2315C004C149C /* MovieService.swift in Sources */,
 				1D1EFA3B23D9937100ACACB9 /* PosterView.swift in Sources */,
-				D9E34A4623A23EF8004C149C /* Movie.swift in Sources */,
 				1D8062F423F536C5005EEE00 /* ResultViewController.swift in Sources */,
-				1D8062F623F536D8005EEE00 /* ContactViewController.swift in Sources */,
+				1D88A98F2410F692002B40AF /* Question.swift in Sources */,
+				1D88A9912411124B002B40AF /* formations.swift in Sources */,
 				1D8062F823F53C1A005EEE00 /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

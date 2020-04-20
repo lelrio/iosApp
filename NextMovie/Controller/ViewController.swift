@@ -1,41 +1,21 @@
-//
-//  ViewController.swift
-//  NextMovie
-//
-//  Created by TonyDam on 12/12/2019.
-//  Copyright © 2019 TonyDam. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var posterView: PosterView!
-    @IBOutlet weak var movieTitleLabel: UILabel!
-    @IBOutlet weak var realeaseYear: UILabel!
     @IBAction func dragPosterView(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
-        case .began, .changed: transformPosterViewWith(gesture: sender)
-        case .ended, .cancelled: setUserChoiceFrom(gesture: sender)
-        default: break
+            case .began, .changed: transformPosterViewWith(gesture: sender)
+            case .ended, .cancelled: setUserChoiceFrom(gesture: sender)
+            default: break
         }
     }
+    @IBOutlet var questionTitle: UILabel!
+    
     var choice = Choice()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        posterView.layer.cornerRadius = 4
-        posterView.clipsToBounds = true
-        
-        posterView.layer.shadowColor = UIColor.black.cgColor
-        posterView.layer.shadowOffset = CGSize(width: 0, height: 3)
-        posterView.layer.shadowOpacity = 0.1
-        posterView.layer.shadowRadius = 4
-        posterView.layer.masksToBounds = false
-        
-    }
-    @objc func discoverMoviesLoaded() {
-        
+                
     }
     
     private func transformPosterViewWith(gesture: UIPanGestureRecognizer){
@@ -61,20 +41,28 @@ class ViewController: UIViewController {
     }
     
     private func setUserChoiceFrom(gesture: UIPanGestureRecognizer) {
-        //        Récupération du geste et calcul du ration geste/(1/4 de la largeur de l’écran)
+        //Récupération du geste et calcul du ration geste/(1/4 de la largeur de l’écran)
         let gestureTranslation = gesture.translation(in: posterView)
         let screenWidth = UIScreen.main.bounds.width
         let ratioOfTranslationAndScreenWidth = gestureTranslation.x / (screenWidth / 4)
         
-        //        Tout stopper si le geste n’est pas significatif
+        //Tout stopper si le geste n’est pas significatif
         guard ratioOfTranslationAndScreenWidth < -1 || ratioOfTranslationAndScreenWidth > 1 else {
             posterView.transform = .identity
             posterView.style = .neutral
             return
         }
         
-        //        Régler le choix de l’utilisateur pour le film en cours
-        
+        //Régler le choix de l’utilisateur pour le film en cours
+        switch posterView.style {
+            case .liked:
+                print("false")
+                choice.setResponse(Response.left)
+            
+        case .unliked: choice.setResponse(Response.right)
+            default: break
+            
+        }
         
         //        Animer la sortie du posterView puis apparition du nouveau poster
         var translationTransform: CGAffineTransform
@@ -98,11 +86,55 @@ class ViewController: UIViewController {
         }
     }
     private func showPoster() {
-        //        Replacer le posterView à sa place d’origine et passer au film suivant
+        //Replacer le posterView à sa place d’origine et passer au film suivant
         posterView.transform = .identity
         posterView.style = .neutral
         
-        
+        switch choice.state {
+        case .ongoing:
+            self.questionTitle.text = choice.currentQuestion.questionTitle
+            posterView.textLeftLabel.text = choice.currentQuestion.textLeft
+            posterView.textRightLabel.text = choice.currentQuestion.textRight
+            posterView.imgLeftIV.image = choice.currentQuestion.imgLeft
+            posterView.imgRightIV.image = choice.currentQuestion.imgRight
+            
+        case .over:
+            print("over")
+            
+            var gauche = 2
+            var droite = 12
+            
+            enum Style{
+                case liked, unliked, neutral
+                
+            }
+            
+            var style: Style = .neutral{
+              
+                didSet{
+                    switch style{
+                    case .liked:
+                        droite += 1
+                        print("droite")
+                    case .unliked:
+                        gauche += 1
+                        print("gauche")
+                        print(gauche)
+                    case .neutral:
+                        print("neutre")
+                    }
+                    
+                }
+
+            }
+            if(gauche > droite) {
+                self.performSegue(withIdentifier: "dataPassingAndResultOne", sender: self)
+            }
+            else if(droite > gauche){
+                self.performSegue(withIdentifier: "dataPassingAndResultTwo", sender: self)
+            }
+            
+        }
         
         //    Animer l’apparition du posterView
         posterView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
