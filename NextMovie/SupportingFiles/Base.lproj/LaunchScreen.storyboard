@@ -21,9 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="premspage" translatesAutoresizingMaskIntoConstraints="NO" id="Lju-yC-pyY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premspage" translatesAutoresizingMaskIntoConstraints="NO" id="Lju-yC-pyY">
                                 <rect key="frame" x="0.0" y="209" width="375" height="458"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="458" id="5uA-xI-Oha"/>
+                                    <constraint firstAttribute="width" constant="375" id="Bx0-hX-M6h"/>
+                                    <constraint firstAttribute="width" secondItem="Lju-yC-pyY" secondAttribute="height" multiplier="375:458" id="chm-kr-9ID"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RVB LOGO WEBSTART-2020 copie" translatesAutoresizingMaskIntoConstraints="NO" id="nz0-sk-780">
                                 <rect key="frame" x="40" y="160.5" width="292" height="122"/>
@@ -44,7 +48,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MnR-N3-GLs" secondAttribute="bottom" constant="312" id="GWU-bV-gOS"/>
                             <constraint firstItem="nz0-sk-780" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="PB4-ep-oHo"/>
                             <constraint firstItem="MnR-N3-GLs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="Ssj-39-4qG"/>
+                            <constraint firstItem="Lju-yC-pyY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TzL-V0-rAl"/>
+                            <constraint firstItem="Lju-yC-pyY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="209" id="UeE-MF-ckA"/>
                             <constraint firstItem="nz0-sk-780" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160.5" id="V2i-Wz-cTi"/>
+                            <constraint firstItem="Lju-yC-pyY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mQW-p7-Hh4"/>
+                            <constraint firstItem="Lju-yC-pyY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nwg-Cq-ZhN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MnR-N3-GLs" secondAttribute="trailing" constant="60" id="sLa-Ra-j1t"/>
                             <constraint firstItem="MnR-N3-GLs" firstAttribute="top" secondItem="nz0-sk-780" secondAttribute="bottom" constant="15" id="zv3-vP-NXA"/>
                         </constraints>

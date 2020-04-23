@@ -19,11 +19,11 @@
             <objects>
                 <viewController id="4uO-UA-83T" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FWF-Dp-0n7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pour répondre aux questions, swipe à gauche ou à droite." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wly-nG-H6w">
-                                <rect key="frame" x="52" y="162" width="310" height="183"/>
+                                <rect key="frame" x="52" y="118" width="310" height="183"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wly-nG-H6w" secondAttribute="height" multiplier="310:183" id="mQC-We-H47"/>
                                 </constraints>
@@ -32,24 +32,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Un peu comme sur Tinder pour les connaisseurs-ses)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgy-9E-xTn">
-                                <rect key="frame" x="79" y="314" width="293" height="56"/>
+                                <rect key="frame" x="79" y="270" width="293" height="57.5"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bu0-YI-Rvd">
-                                <rect key="frame" x="126" y="415" width="162" height="38"/>
+                                <rect key="frame" x="126" y="372.5" width="162" height="38"/>
                                 <color key="backgroundColor" name="Color1"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Commencer le test">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="7n2-xr-tFn"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Szu-RP-Qbd"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pagegauche" translatesAutoresizingMaskIntoConstraints="NO" id="VFE-Bf-LJ2">
-                                <rect key="frame" x="0.0" y="678" width="414" height="218"/>
+                                <rect key="frame" x="0.0" y="624" width="414" height="218"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VFE-Bf-LJ2" secondAttribute="height" multiplier="207:109" id="aeT-At-SMO"/>
                                 </constraints>
@@ -84,17 +84,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NextMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pour toi les réseaux sociaux c'est ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8r-qR-CTE" userLabel="title">
-                                <rect key="frame" x="30" y="84" width="354" height="79"/>
+                                <rect key="frame" x="30" y="40" width="354" height="79"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imK-hb-kyV" customClass="PosterView" customModule="NextMovie" customModuleProvider="target">
-                                <rect key="frame" x="27" y="203" width="360" height="360"/>
+                                <rect key="frame" x="27" y="159" width="360" height="360"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-MW-Lfx">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="360"/>
@@ -176,7 +176,7 @@
                                 </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pagedroite" translatesAutoresizingMaskIntoConstraints="NO" id="bOU-uc-Bjf">
-                                <rect key="frame" x="0.0" y="646" width="414" height="250"/>
+                                <rect key="frame" x="0.0" y="592" width="414" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bOU-uc-Bjf" secondAttribute="height" multiplier="207:125" id="rrl-mw-R8H"/>
                                 </constraints>
@@ -219,32 +219,32 @@
             <objects>
                 <viewController id="pD5-hG-wPB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9cm-Yc-64q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result" translatesAutoresizingMaskIntoConstraints="NO" id="ZXO-08-Mnc">
-                                <rect key="frame" x="0.0" y="303" width="290" height="82"/>
+                                <rect key="frame" x="0.0" y="249" width="290" height="82"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nerd" translatesAutoresizingMaskIntoConstraints="NO" id="9j4-rM-Hma">
-                                <rect key="frame" x="194" y="262" width="119" height="124"/>
+                                <rect key="frame" x="194" y="208" width="119" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9j4-rM-Hma" secondAttribute="height" multiplier="119:124" id="FES-Hg-g1b"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agent du Web" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niv-71-bgx">
-                                <rect key="frame" x="30" y="329" width="224" height="31.5"/>
+                                <rect key="frame" x="30" y="275" width="224" height="31.5"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La formation faite pour toi est plutôt théorique !" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-iK-s7g">
-                                <rect key="frame" x="30" y="165" width="354" height="79"/>
+                                <rect key="frame" x="30" y="121" width="354" height="69"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pageresultat" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-AG-GX7">
-                                <rect key="frame" x="0.0" y="558" width="414" height="338"/>
+                                <rect key="frame" x="0.0" y="504" width="414" height="338"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="338" id="XgN-8u-a9v"/>
                                     <constraint firstAttribute="width" secondItem="cSu-AG-GX7" secondAttribute="height" multiplier="207:169" id="kBt-lA-t18"/>
@@ -252,7 +252,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bravo tu es destiné a apporter ton côté théorique au entreprise afin de les faire grandir" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-sg-ci9">
-                                <rect key="frame" x="30" y="418" width="310" height="97"/>
+                                <rect key="frame" x="30" y="364" width="310" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="310" id="8Io-hS-DnS"/>
                                     <constraint firstAttribute="height" constant="97" id="ia5-B2-G1m"/>
@@ -262,13 +262,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En savoir plus sur la formation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-gV-brh">
-                                <rect key="frame" x="93" y="557" width="220" height="20.5"/>
+                                <rect key="frame" x="93" y="503" width="220" height="20.5"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" red="0.20903241074478882" green="0.33210882789983637" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djS-Ug-Yr1">
-                                <rect key="frame" x="105" y="594" width="204" height="62"/>
+                                <rect key="frame" x="105" y="540" width="204" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="Dtj-lU-ZUp"/>
                                     <constraint firstAttribute="width" constant="204" id="OdO-iV-ocq"/>
@@ -276,9 +276,12 @@
                                 <state key="normal" title="Rejouer" backgroundImage="button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4uO-UA-83T" kind="show" id="kix-vA-U57"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5Q-jj-Ou6">
-                                <rect key="frame" x="127" y="680" width="161" height="48"/>
+                                <rect key="frame" x="127" y="626" width="161" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="5dp-ZH-UyD"/>
                                     <constraint firstAttribute="width" constant="161" id="fJo-4j-Twx"/>
@@ -335,11 +338,11 @@
             <objects>
                 <viewController id="1K1-cU-0SA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TCk-ln-epf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dernierepage" translatesAutoresizingMaskIntoConstraints="NO" id="04W-LP-DF0">
-                                <rect key="frame" x="0.0" y="566" width="414" height="330"/>
+                                <rect key="frame" x="0.0" y="512" width="414" height="330"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="330" id="BRr-d7-Q3n"/>
                                     <constraint firstAttribute="width" constant="414" id="kZT-j3-fDA"/>
@@ -347,7 +350,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crédits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGu-lg-Nrz">
-                                <rect key="frame" x="134" y="114" width="147" height="59"/>
+                                <rect key="frame" x="134" y="70" width="147" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="147" id="XYx-gZ-quZ"/>
                                     <constraint firstAttribute="height" constant="59" id="gx8-1N-4nU"/>
@@ -357,7 +360,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cette application a été développée par :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zta-hd-g8m">
-                                <rect key="frame" x="67" y="220" width="281" height="87"/>
+                                <rect key="frame" x="67" y="176" width="281" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="Dwj-Nl-W9A"/>
                                     <constraint firstAttribute="width" constant="281" id="u9t-cE-gor"/>
@@ -367,31 +370,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Léonard ELRIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY3-rK-KJh">
-                                <rect key="frame" x="144" y="371" width="123" height="24"/>
+                                <rect key="frame" x="144" y="317" width="123" height="24"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Et designé par :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6g-1E-rXj">
-                                <rect key="frame" x="122" y="415" width="172" height="33"/>
+                                <rect key="frame" x="122" y="361" width="172" height="33"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formation Direction Artistique Web" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEs-He-jPl">
-                                <rect key="frame" x="59" y="534" width="292" height="24"/>
+                                <rect key="frame" x="59" y="480" width="292" height="24"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formation Développement Web &amp; Mobile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJY-cj-8yH">
-                                <rect key="frame" x="68" y="313" width="280" height="48"/>
+                                <rect key="frame" x="68" y="259" width="280" height="48"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hugo DEBOVES Juliette HUBERT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyt-Kg-A53">
-                                <rect key="frame" x="119" y="478" width="172" height="48"/>
+                                <rect key="frame" x="119" y="424" width="172" height="48"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -454,18 +457,18 @@
             <objects>
                 <viewController id="Imo-Ux-Tiz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ihO-la-I7x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result" translatesAutoresizingMaskIntoConstraints="NO" id="9qi-54-WgC">
-                                <rect key="frame" x="0.0" y="319" width="318" height="118"/>
+                                <rect key="frame" x="0.0" y="275" width="318" height="118"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="318" id="EJm-6u-dR0"/>
                                     <constraint firstAttribute="height" constant="118" id="oiK-Rg-LNn"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result-dev" translatesAutoresizingMaskIntoConstraints="NO" id="HmH-4G-8tq">
-                                <rect key="frame" x="244" y="303" width="119" height="138"/>
+                                <rect key="frame" x="244" y="259" width="119" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="5hE-bb-5lg"/>
                                     <constraint firstAttribute="width" secondItem="HmH-4G-8tq" secondAttribute="height" multiplier="119:138" id="Vll-p5-5zU"/>
@@ -473,13 +476,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technicien du Web" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPa-3j-M7i">
-                                <rect key="frame" x="30" y="364.5" width="224" height="31.5"/>
+                                <rect key="frame" x="30" y="320.5" width="224" height="31.5"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La formation faite pour toi est plutôt pratique" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZK-Fn-NbX">
-                                <rect key="frame" x="30" y="165" width="354" height="79"/>
+                                <rect key="frame" x="30" y="121" width="354" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="354" id="Ejx-kQ-XmR"/>
                                     <constraint firstAttribute="height" constant="79" id="HfK-0L-Oj8"/>
@@ -489,13 +492,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En savoir plus sur la formation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vp-oL-8e9">
-                                <rect key="frame" x="106" y="554" width="220" height="27.5"/>
+                                <rect key="frame" x="106" y="510" width="220" height="17.5"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Thin" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" red="0.2090324107" green="0.33210882790000001" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bravo tu vis la yes life en travaillant comme un archarné tout de même car tu apprend par la pratique" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apa-4T-MXR">
-                                <rect key="frame" x="30" y="431" width="283" height="93"/>
+                                <rect key="frame" x="30" y="387" width="283" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="283" id="F4t-lq-O3u"/>
                                     <constraint firstAttribute="height" constant="93" id="Nq0-9o-GOb"/>
@@ -505,7 +508,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7O-hO-JXD">
-                                <rect key="frame" x="136" y="667" width="161" height="45"/>
+                                <rect key="frame" x="136" y="613" width="161" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="161" id="Pbb-jW-OQN"/>
                                     <constraint firstAttribute="height" constant="45" id="VIL-hY-EU0"/>
@@ -518,7 +521,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEl-jP-ccq">
-                                <rect key="frame" x="111" y="596.5" width="211" height="60"/>
+                                <rect key="frame" x="111" y="542.5" width="211" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="pDf-kb-1ae"/>
                                     <constraint firstAttribute="width" constant="211" id="yty-p2-lrg"/>
@@ -526,9 +529,12 @@
                                 <state key="normal" title="Rejouer" backgroundImage="button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4uO-UA-83T" kind="show" id="VvH-7f-ctT"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pageresultat" translatesAutoresizingMaskIntoConstraints="NO" id="pEF-Bn-hGJ">
-                                <rect key="frame" x="0.0" y="554" width="414" height="342"/>
+                                <rect key="frame" x="0.0" y="510" width="414" height="332"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pEF-Bn-hGJ" secondAttribute="height" multiplier="207:169" id="zUE-Ud-S0A"/>
                                 </constraints>
@@ -574,7 +580,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="J7a-9U-mb8"/>
         <segue reference="IkP-j7-fOb"/>
+        <segue reference="kix-vA-U57"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="button" width="283" height="78"/>

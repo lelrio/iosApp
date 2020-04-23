@@ -101,8 +101,10 @@ class ViewController: UIViewController {
         case .over:
             print("over")
             
-            var gauche = 2
-            var droite = 12
+            var gauche = Int.random(in: 0 ... 10)
+
+            var droite = Int.random(in: 0 ... 10)
+
             
             enum Style{
                 case liked, unliked, neutral
